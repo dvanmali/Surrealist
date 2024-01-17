@@ -1,0 +1,10 @@
+# Tests the distribution deployment on a local machine.
+version: '3.6'
+
+services:
+  surrealist:
+    build:
+      dockerfile: Dockerfile
+    container_name: surrealist
+    ports:
+      - 8080:8080
